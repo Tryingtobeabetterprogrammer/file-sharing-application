@@ -118,7 +118,7 @@ def Receive():
     window.mainloop()
 
 img1 = Image.open('C:/vscode/file sharing app/img/Untitled.jpg')
-img1 = img1.resize((50, 50))  # Resize the image
+img1 = img1.resize((50, 50))  
 img_icon = ImageTk.PhotoImage(img1)
 root.iconphoto(False, img_icon)
 
@@ -126,13 +126,13 @@ Label(root, text='File Transfer', font=('Acumin Variable Concept', 20, 'bold'), 
 Frame(root, width=400, height=2, bg='#f3f5f6').place(x=25, y=80)
 
 img2 = Image.open('C:/vscode/file sharing app/img/send.png')
-img2 = img2.resize((100, 100))  # Resize the image
+img2 = img2.resize((100, 100))  
 send_img = ImageTk.PhotoImage(img2)
 send = Button(root, image=send_img, bg='#f4fcfe', bd=0, command=send)
 send.place(x=50, y=100)
 
 img3 = Image.open('C:/vscode/file sharing app/img/receive icon.png')
-img3 = img3.resize((100, 100))  # Resize the image
+img3 = img3.resize((100, 100))  
 receive_img = ImageTk.PhotoImage(img3)
 receive = Button(root, image=receive_img, bg='#f4fcfe', bd=0, command=Receive)
 receive.place(x=300, y=100)
